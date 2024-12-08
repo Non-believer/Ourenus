@@ -52,7 +52,7 @@ function CircularProgressWithLabel({ value }) {
   };
 
   const processedValue =
-    value === Infinity ? 0 : value > 100 ? 100 : value > 0 ? value : 0;
+    value === Infinity ? Infinity : value > 100 ? 100 : value > 0 ? value : 0;
 
   const { gradientColors, backgroundColor, typographyGradient } =
     getStyles(value);
@@ -106,7 +106,9 @@ function CircularProgressWithLabel({ value }) {
             textAlign: "center",
           }}
         >
-          {`${Math.round(processedValue)}%`}
+          {`${
+            processedValue === Infinity ? "∞" : Math.round(processedValue) + "%"
+          }`}
         </Typography>
       </Box>
 

@@ -82,7 +82,9 @@ const UsageBox = ({ type, value, total, remaining }) => {
             fontWeight: "700",
           }}
         >
-          {remainingParsed.number}
+          {remainingParsed.text === t("infinity")
+            ? remainingParsed.text
+            : remainingParsed.number}
         </Typography>
         <Typography
           variant="h6"
@@ -119,7 +121,9 @@ const UsageBox = ({ type, value, total, remaining }) => {
             {totaltitle}
           </Typography>
           <Typography variant="h6" component="div">
-            {totalParsed.number}
+            {totalParsed.text === t("infinity")
+              ? totalParsed.text
+              : totalParsed.number}
           </Typography>
           <Typography
             variant="h6"
