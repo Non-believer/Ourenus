@@ -29,7 +29,7 @@ function CircularProgressWithLabel({ value }) {
         typographyGradient: theme.colors.gradients.high.typographyGradient,
       };
     }
-    if (value <= 30 || value > 100) {
+    if (value <= 30) {
       return {
         gradientColors: theme.colors.gradients.high.colors[theme.palette.mode],
         backgroundColor: theme.colors.gradients.high.background,
