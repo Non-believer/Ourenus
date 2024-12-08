@@ -17,8 +17,8 @@
     "limited": "Limited"
   },
   "support": "Tutorials",
-  "userPanelTitle": "{brandName}'s User Panel",
-  "userPanelWelcome": "Welcome to {brandName}'s user panel.",
+  "userPanelTitle": "User Panel",
+  "userPanelWelcome": "Welcome to user panel.",
   "operatingSystems": "Operating Systems",
   "configuration": "Add to App",
   "download": "Download",
