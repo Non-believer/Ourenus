@@ -99,8 +99,8 @@ export const calculateUsedTimePercentage = (expireTimestamp) => {
     return 99;
   }
 
-  if (daysRemaining <= 30) {
-    return ((30 - daysRemaining) / 30) * 100;
+  if (daysRemaining <= 31) {
+    return ((31 - daysRemaining) / 31) * 100;
   }
 
   if (daysRemaining <= 90) {
